@@ -1,8 +1,10 @@
 import { FC, Suspense } from "react";
-import "./App.css";
+
 import PageLoading from "@components/PageLoading";
 import { Route, Routes } from "react-router-dom";
 import AppView from "@views/AppView";
+
+import "./App.module.less";
 
 const RootApp: FC = () => {
   return (
