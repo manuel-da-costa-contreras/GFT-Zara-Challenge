@@ -4,11 +4,11 @@
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist",
     "baseUrl": "src",
     "paths": {
       "@components/*": ["app/components/*"],
-      "@views/*": ["app/views/*"]
+      "@views/*": ["app/views/*"],
+      "@common/*": ["common/*"]
     }
   }
 }
