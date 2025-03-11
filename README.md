@@ -1,17 +1,25 @@
 ## 🚀 Quick Start
 
-Start development easily.
+Proyecto Realizado con Vite usando vite --template react-ts, ya que npx create-react-app me ha arrojado problemas al momento de instalar dependencias,
+tambien he configurado un poco el vite.config.js para permitir el uso de path relativos.
+
+Se ha usado react-query v5 (tanstack) para de respuestas de los endpoints, anteriormente en otros proyecto use RTKQuery inicialmente
+pero al no tener la necesidad de usar Redux en este mini-proyecto, use react-query en su lugar.
 
 ### Install dependencies
 
-First, you need to collect and install all packages running `npm install`.
+Primero, se necesita de coleccionar e instalar todas las dependencias usando `npm install`
 
-Make sure you're using NPM instead of yarn.
+Asegurar de usar NPM en vez de yarn.
+
+Version de Nodejs y React
+Node version: v22.13.1
+React version: 19.0.0
 
 ### Run development server
 
-If you already collected packages, you can start the development server running `npm start`
-and open http://localhost:3000 to view it in the browser.
+Si ya estan las dependencias instaladas, se puede iniciar el proyecto usando `npm start` y
+abrir http://localhost:3000 para verlo en el navegador
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+la pagina se actualizara al realizar ediciones
+tambien se podra observar cualquier error de Lint en la consola

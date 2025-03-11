@@ -8,6 +8,7 @@
     "paths": {
       "@components/*": ["app/components/*"],
       "@views/*": ["app/views/*"],
+      "@assets/*": ["app/assets/*"],
       "@common/*": ["common/*"]
     }
   }
