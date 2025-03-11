@@ -18,7 +18,7 @@ export interface LinksNavigationResponse {
 export interface CharactersApiResponse {
   readonly items: Character[];
   readonly meta: MetaResponse;
-  readonly Links: LinksNavigationResponse;
+  readonly links: LinksNavigationResponse;
 }
 
 export interface SingleCharacterApiResponse extends Character {
