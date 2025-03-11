@@ -1,6 +1,7 @@
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   readonly src: string;
-  readonly alt?: string;
+  readonly altSrc?: string;
+  readonly altText?: string;
   readonly width?: number | string;
   readonly minWidth?: number | string;
   readonly maxWidth?: number | string;

@@ -1,27 +1,27 @@
 import { FC, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { CHARACTER_ROUTE, HOME_ROUTE } from "@common/constants/index";
 import { Redirect } from "@common/components";
 import AppHeader from "@components/AppHeader";
 import PageLoading from "@components/PageLoading";
 import ListView from "@views/ListsView/ListView";
 import CharacterView from "@views/CharacterView";
+import { AppRoutes } from "@common/config";
 
 const AppView: FC = () => {
   return (
-    <>
+    <div>
       <Suspense fallback={<PageLoading />}>
         <AppHeader />
         <Routes>
-          <Route path={HOME_ROUTE} element={<ListView />} />
+          <Route path={`${AppRoutes.HOME_URL}/*`} element={<ListView />} />
           <Route
-            path={`${CHARACTER_ROUTE}/:idStr/*`}
+            path={`${AppRoutes.CHARACTERS_URL}/:idStr/*`}
             element={<CharacterView />}
           />
-          <Route path="*" element={<Redirect to={HOME_ROUTE} />} />
+          <Route path="*" element={<Redirect to={AppRoutes.HOME_URL} />} />
         </Routes>
       </Suspense>
-    </>
+    </div>
   );
 };
 

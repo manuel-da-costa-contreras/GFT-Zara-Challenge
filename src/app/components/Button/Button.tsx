@@ -11,7 +11,7 @@ const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${icon && !children ? styles.icon : ""} ${loading ? styles.loading : ""}`}
+      className={`${styles.defaultStyles} ${icon && !children ? styles.icon : ""} ${loading ? styles.loading : ""}`}
       {...props}
     >
       {loading ? <PageLoading size="sm" /> : icon}

@@ -7,16 +7,28 @@ const Icon: FC<IconProps> = ({
   size = 24,
   alt = "icon",
   className,
+  isFavorite,
+  isHovered,
+  filledWhiteIcon,
   ...props
 }) => {
   return (
-    <img
-      src={src}
-      alt={alt}
-      className={`${styles.icon} ${className ? className : ""} `}
-      style={{ width: size, height: size }}
-      {...props}
-    />
+    <>
+      {filledWhiteIcon && (
+        <img
+          src={filledWhiteIcon}
+          className={`${styles.filledFavoriteIcon} ${isFavorite && isHovered ? styles.show : styles.hide}`}
+          style={{ width: size, height: size }}
+        />
+      )}
+      <img
+        src={src}
+        alt={alt}
+        className={`${isFavorite && isHovered ? styles.hide : styles.show}  ${styles.icon} ${className ? className : ""} `}
+        style={{ width: size, height: size }}
+        {...props}
+      />
+    </>
   );
 };
 

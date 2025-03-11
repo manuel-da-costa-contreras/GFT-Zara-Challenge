@@ -4,7 +4,8 @@ import styles from "./styles.module.less";
 
 const Image: FC<ImageProps> = ({
   src,
-  alt,
+  altSrc,
+  altText,
   width,
   minWidth,
   maxWidth,
@@ -37,8 +38,8 @@ const Image: FC<ImageProps> = ({
       }}
     >
       <img
-        src={src}
-        alt={alt}
+        src={src ?? altSrc}
+        alt={altText}
         loading={loading}
         className={classes}
         {...props}

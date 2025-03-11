@@ -3,4 +3,28 @@
   vertical-align: middle;
   object-fit: contain;
   transition: opacity 0.2;
+  padding: 0;
+  margin: 0;
+
+  transition:
+    opacity 0.5s ease-in,
+    transform 0.5s;
+}
+
+.filledFavoriteIcon {
+  position: relative;
+  left: 18px;
+  top: 5px;
+
+  transition:
+    opacity 0.1s ease-out,
+    transform 0.1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
