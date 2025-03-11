@@ -23,3 +23,8 @@ abrir http://localhost:3000 para verlo en el navegador
 
 la pagina se actualizara al realizar ediciones
 tambien se podra observar cualquier error de Lint en la consola
+
+### Test
+
+Los test se realizaron con Cypress, para iniciarlos es obligatorio tener el proyecto iniciado con `npm start`
+y para iniciarlos con cypress se usa el comando por defecto `npx cypress open`
