@@ -1,0 +1,11 @@
+export { default as AppMarvelLogo } from "./Marvel logo.png";
+export { default as AppDragonBallLogo } from "./Dragon_Ball_Super.png";
+export { default as SearchOutlinedIcon } from "./Like button.png";
+export { default as FavoriteFilledIcon } from "./State=Default.png";
+export { default as FavoriteOutlinedIcon } from "./State=Unselected.png";
+export { default as DefaultCard } from "./defaultCard.jpeg";
+export { default as FavoriteFilledWhiteIcon } from "./Union.png";
+export { default as RightArrowIcon } from "./icons8-derecha-24.png";
+export { default as DoubleRightArrowIcon } from "./icons8-doble-derecha-30.png";
+export { default as LeftArrowIcon } from "./icons8-izquierda-50.png";
+export { default as DoubleLeftArrowIcon } from "./icons8-doble-izquierda-24.png";
