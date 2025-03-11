@@ -1,0 +1,41 @@
+.searchWrapper {
+  padding: 16px 0;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+
+  .inputContainer {
+    display: flex;
+    position: relative;
+
+    .inputIcon {
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+
+    input:focus {
+      outline: rgba(50, 50, 50, 1);
+    }
+
+    .inputStyles {
+      font-size: 16px;
+      padding: 8px 24px;
+      text-transform: uppercase;
+      width: 100%;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      background-color: transparent;
+      color: #aaaaaa;
+      margin-bottom: 12px;
+    }
+  }
+
+  .resultStyles {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+  }
+}
